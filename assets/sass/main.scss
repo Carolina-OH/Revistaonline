@@ -1,16 +1,18 @@
 //abstracts
 //vendors
 //Variables
+@import "abstracts/variables";
+@import "abstracts/mixins";
 //base
 @import "base/reset";
 @import "base/base";
 //layout
 //components
-@import "layout/contenedor";
-@import "layout/article";
-@import "layout/section";
 @import "layout/nav";
+@import "layout/contenedor";
 @import "layout/grid";
+@import "layout/section";
+@import "layout/article";
 @import "layout/footer"
 
 //pages
