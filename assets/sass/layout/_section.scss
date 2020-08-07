@@ -4,6 +4,10 @@ margin: 0 auto;
 
 .listad-noticias {
     float: left;
+    margin-left: 20%;
+    @include respond-to($bp-sm){
+        margin-left: 0;
+    }
 }
 
 .noticia {
@@ -24,7 +28,7 @@ margin: 0 auto;
 .listado-izquierdo {
     width: 220px;
     float: right;
-    
+    margin-left: 10%;
 }
 
 .tags ul li{
