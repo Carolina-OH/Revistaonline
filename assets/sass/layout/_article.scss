@@ -1,13 +1,13 @@
 .newsletter {
-    width: 960px;
     background-color: #f2f4f5;
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    float: left;
+    
     @media (max-width:963px){
     
         width: 100%;
+        clear: both;
     }
     
 }

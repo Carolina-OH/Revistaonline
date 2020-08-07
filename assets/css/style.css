@@ -93,7 +93,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-  nav {
+  .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -110,7 +110,7 @@ footer {
     margin-left: 10%;
   }
   .listad-noticias .cuerpo img {
-    height: 150px;
+    height: 180px;
   }
 
   .newsletter {
@@ -118,7 +118,7 @@ footer {
     grid-template-columns: 12fr;
   }
 
-  footer {
+  footer p {
     display: grid;
     grid-template-columns: 12fr;
   }
@@ -338,16 +338,15 @@ footer {
 }
 
 .newsletter {
-  width: 960px;
   background-color: #f2f4f5;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  float: left;
 }
 @media (max-width: 963px) {
   .newsletter {
     width: 100%;
+    clear: both;
   }
 }
 
@@ -369,7 +368,6 @@ footer {
 }
 
 .footer {
-  width: 960px;
   margin: 0 auto;
   text-align: center;
   clear: both;
