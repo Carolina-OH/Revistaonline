@@ -9,23 +9,24 @@
         width: 100%;
         clear: both;
     }
+    h2 {
+        font-size: 24px
+    }
+    
+    &__group{
+        &__input{
+            display: inline-block;
+            border-width: 0;
+            font-size: 13px;
+            padding: 5px 10px;
+        }
+        button {
+            @extend .newsletter__group__input;
+            background-color: coral;
+            color: white;
+            }
+    }
+        
     
 }
 
-.newsletter h2 {
-    font-size: 24px
-}
-
-.group input,
-.group button {
-    display: inline-block;
-    border-width: 0;
-    font-size: 13px;
-    padding: 5px 10px;
-
-}
-
-.group button {
-    background-color: coral;
-    color: white;
-}

@@ -1,9 +1,8 @@
 //Grillas
 .container{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
 }
-
 nav{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -17,16 +16,17 @@ grid-template-columns: 2fr 1fr;
 .listad-noticias{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 630px 630px;
     
  
 }
 
 .listado-izquierdo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    .cabecera-listado ,.tags, .noticias-destacadas{
-        grid-column-start: 1;
-        grid-column-end: 2;
+    grid-template-columns: 1fr;
+    &__noticias-destacadas{
+        display: grid;
+        grid-template-columns: 1fr;
     }
     }
 
@@ -39,6 +39,8 @@ footer{
     display: grid;
 grid-template-columns: 1fr;
 }
+
+
 .d-none{
     display: none;
 }
@@ -53,7 +55,7 @@ grid-template-columns: 1fr;
     @include respond-to($bp-sm){
     .menu{
         display: grid;
-        grid-template-columns: 15px 1fr;
+        grid-template-columns: 60px 1fr;
         grid-template-rows:1fr;
         }   
     
@@ -65,11 +67,10 @@ grid-template-columns: 1fr;
         .listad-noticias{
             display: grid;
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
             .cuerpo img{
-            height: 180px;
-           
-
-            }
+            height: 200px;
+                        }
          
         }
         
