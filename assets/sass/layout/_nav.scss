@@ -21,7 +21,20 @@
                 margin-left: 70px;
                 padding: 0; 
                 text-align: right;     
-              } }
+              }
+              @include respond-to-md($bp-md){
+                width: 100%;
+                margin-left: 150px;
+                padding: 0; 
+                text-align: right; 
+                 }
+                 @include respond-to-lg($bp-lg){
+                    width: 100%;
+                    margin-left: 250px;
+                    padding: 0; 
+                    text-align: right; 
+                     }
+                }
             &__item{
                 display: inline;
                     a {
@@ -31,7 +44,7 @@
                     input {
                     border-radius: 30px;
                     @include respond-to($bp-sm){
-                        width: 60%;
+                        width: 50%;
                         margin: 0;
                         padding: 0;      
                        }

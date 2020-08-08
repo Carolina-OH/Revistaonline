@@ -1,4 +1,5 @@
 //Grillas
+//responsive para lg-xl
 .container{
     display: grid;
     grid-template-columns: 1fr;
@@ -57,7 +58,7 @@ grid-template-columns: 1fr;
 }
 
 //medias querys responsive
-//responsive para sm
+//responsive para xs-sm
  @include respond-to($bp-sm){
     .menu{
         display: grid;
@@ -104,6 +105,36 @@ grid-template-columns: 1fr;
     section{
         display: grid;
         grid-template-columns: 1fr;
+        }
+        
+        .listad-noticias{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            
+        }
+        
+        .newsletter{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+        footer p{
+        display: grid;
+        grid-template-columns: 1fr;
+}
+}
+//responsive para lg
+@include respond-to-lg($bp-lg){
+    .menu{
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows:1fr;
+        }   
+    
+    section{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
         }
         
         .listad-noticias{
