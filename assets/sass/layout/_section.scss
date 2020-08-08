@@ -4,6 +4,10 @@
     @include respond-to($bp-sm){
         margin-left: 0;
     }
+    @include respond-to-md($bp-md){
+        margin-left: 0;
+    }
+    
     &__noticia {
         display: inline-block;
         cursor: pointer;

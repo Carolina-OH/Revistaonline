@@ -3,4 +3,11 @@
         @content
     }
     
-}
+};
+@mixin respond-to-md($break-point) {
+    @media (max-width:$break-point){
+        @content
+    }
+    
+};
+
